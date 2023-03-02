@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'alurapic'`, () => {
+  it(`should have as title 'galerypic'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('alurapic');
+    expect(app.title).toEqual('galerypic');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('alurapic app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('galerypic app is running!');
   });
 });
